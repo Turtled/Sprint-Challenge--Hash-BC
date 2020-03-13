@@ -1,6 +1,6 @@
 import unittest
 
-from ex1 import get_indices_of_item_weights
+from ex1 import get_indices_of_item_weights, print_answer
 
 
 class TestEx1(unittest.TestCase):
@@ -25,6 +25,7 @@ class TestEx1(unittest.TestCase):
     def test_ex1_4(self):
         weights_4 = [12, 6, 7, 14, 19, 3, 0, 25, 40]
         answer_4 = get_indices_of_item_weights(weights_4, 9, 7)
+        print_answer(answer_4)
         self.assertTrue(answer_4[0] == 6)
         self.assertTrue(answer_4[1] == 2)
 
